@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B43448620871665A103A3168 /* libPods-ofo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7000A158C1B9EBC700617E52 /* libPods-ofo.a */; };
 		BF027B771EB8A57F00BBE7FE /* MyAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF027B761EB8A57F00BBE7FE /* MyAnnotation.swift */; };
 		BF1228D01EB6C2C00044970B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF1228CF1EB6C2C00044970B /* AppDelegate.swift */; };
 		BF1228D21EB6C2C00044970B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF1228D11EB6C2C00044970B /* ViewController.swift */; };
@@ -15,9 +16,15 @@
 		BF1228DA1EB6C2C00044970B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF1228D81EB6C2C00044970B /* LaunchScreen.storyboard */; };
 		BF1228E61EB6C39B0044970B /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF1228E51EB6C39B0044970B /* MapKit.framework */; };
 		BF1228E81EB6C6030044970B /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF1228E71EB6C6030044970B /* WebViewController.swift */; };
+		BFDDACD81EBB517C00B8EABE /* LeftMenuTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFDDACD71EBB517C00B8EABE /* LeftMenuTableViewController.swift */; };
+		BFDDACDA1EBB70EF00B8EABE /* IndexTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFDDACD91EBB70EF00B8EABE /* IndexTableViewController.swift */; };
+		BFE63CF41EC42F570060E725 /* 中国广东省深圳市南山区北环大道8188号 邮政编码_ 518055.gpx in Resources */ = {isa = PBXBuildFile; fileRef = BFE63CF31EC42F570060E725 /* 中国广东省深圳市南山区北环大道8188号 邮政编码_ 518055.gpx */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7000A158C1B9EBC700617E52 /* libPods-ofo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ofo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A643FC5ECDB3F1BD11B0325D /* Pods-ofo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ofo.release.xcconfig"; path = "Pods/Target Support Files/Pods-ofo/Pods-ofo.release.xcconfig"; sourceTree = "<group>"; };
+		AE7BB052906D2C6FBFE4736F /* Pods-ofo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ofo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ofo/Pods-ofo.debug.xcconfig"; sourceTree = "<group>"; };
 		BF027B761EB8A57F00BBE7FE /* MyAnnotation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyAnnotation.swift; sourceTree = "<group>"; };
 		BF1228CC1EB6C2C00044970B /* ofo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ofo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF1228CF1EB6C2C00044970B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -28,6 +35,10 @@
 		BF1228DB1EB6C2C10044970B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BF1228E51EB6C39B0044970B /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		BF1228E71EB6C6030044970B /* WebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
+		BFDDACD71EBB517C00B8EABE /* LeftMenuTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeftMenuTableViewController.swift; sourceTree = "<group>"; };
+		BFDDACD91EBB70EF00B8EABE /* IndexTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IndexTableViewController.swift; sourceTree = "<group>"; };
+		BFE63CF31EC42F570060E725 /* 中国广东省深圳市南山区北环大道8188号 邮政编码_ 518055.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = "中国广东省深圳市南山区北环大道8188号 邮政编码_ 518055.gpx"; path = "../中国广东省深圳市南山区北环大道8188号 邮政编码_ 518055.gpx"; sourceTree = "<group>"; };
+		BFE63CF51EC435EB0060E725 /* ofo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ofo-Bridging-Header.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,6 +47,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BF1228E61EB6C39B0044970B /* MapKit.framework in Frameworks */,
+				B43448620871665A103A3168 /* libPods-ofo.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -48,6 +60,7 @@
 				BF1228CE1EB6C2C00044970B /* ofo */,
 				BF1228CD1EB6C2C00044970B /* Products */,
 				BF1228E41EB6C39B0044970B /* Frameworks */,
+				BFACE084F97A713C02530D73 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -73,7 +86,9 @@
 			isa = PBXGroup;
 			children = (
 				BF1228CF1EB6C2C00044970B /* AppDelegate.swift */,
+				BFDDACD91EBB70EF00B8EABE /* IndexTableViewController.swift */,
 				BF1228D11EB6C2C00044970B /* ViewController.swift */,
+				BFDDACD71EBB517C00B8EABE /* LeftMenuTableViewController.swift */,
 				BF1228E71EB6C6030044970B /* WebViewController.swift */,
 				BF1228DB1EB6C2C10044970B /* Info.plist */,
 			);
@@ -94,6 +109,8 @@
 			children = (
 				BF1228D61EB6C2C00044970B /* Assets.xcassets */,
 				BF027B761EB8A57F00BBE7FE /* MyAnnotation.swift */,
+				BFE63CF31EC42F570060E725 /* 中国广东省深圳市南山区北环大道8188号 邮政编码_ 518055.gpx */,
+				BFE63CF51EC435EB0060E725 /* ofo-Bridging-Header.h */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -102,8 +119,18 @@
 			isa = PBXGroup;
 			children = (
 				BF1228E51EB6C39B0044970B /* MapKit.framework */,
+				7000A158C1B9EBC700617E52 /* libPods-ofo.a */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BFACE084F97A713C02530D73 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AE7BB052906D2C6FBFE4736F /* Pods-ofo.debug.xcconfig */,
+				A643FC5ECDB3F1BD11B0325D /* Pods-ofo.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -113,9 +140,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BF1228DE1EB6C2C10044970B /* Build configuration list for PBXNativeTarget "ofo" */;
 			buildPhases = (
+				058DC54B36FC31507D481914 /* [CP] Check Pods Manifest.lock */,
 				BF1228C81EB6C2C00044970B /* Sources */,
 				BF1228C91EB6C2C00044970B /* Frameworks */,
 				BF1228CA1EB6C2C00044970B /* Resources */,
+				7934D41B9548CB6F9DE0D377 /* [CP] Embed Pods Frameworks */,
+				D656445FF90F1469B8B68875 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -138,10 +168,11 @@
 				TargetAttributes = {
 					BF1228CB1EB6C2C00044970B = {
 						CreatedOnToolsVersion = 8.2.1;
+						LastSwiftMigration = 0820;
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.Maps.iOS = {
-								enabled = 1;
+								enabled = 0;
 							};
 						};
 					};
@@ -173,10 +204,59 @@
 				BF1228DA1EB6C2C00044970B /* LaunchScreen.storyboard in Resources */,
 				BF1228D71EB6C2C00044970B /* Assets.xcassets in Resources */,
 				BF1228D51EB6C2C00044970B /* Main.storyboard in Resources */,
+				BFE63CF41EC42F570060E725 /* 中国广东省深圳市南山区北环大道8188号 邮政编码_ 518055.gpx in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		058DC54B36FC31507D481914 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		7934D41B9548CB6F9DE0D377 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ofo/Pods-ofo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D656445FF90F1469B8B68875 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ofo/Pods-ofo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		BF1228C81EB6C2C00044970B /* Sources */ = {
@@ -184,6 +264,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				BF1228D21EB6C2C00044970B /* ViewController.swift in Sources */,
+				BFDDACD81EBB517C00B8EABE /* LeftMenuTableViewController.swift in Sources */,
+				BFDDACDA1EBB70EF00B8EABE /* IndexTableViewController.swift in Sources */,
 				BF1228E81EB6C6030044970B /* WebViewController.swift in Sources */,
 				BF027B771EB8A57F00BBE7FE /* MyAnnotation.swift in Sources */,
 				BF1228D01EB6C2C00044970B /* AppDelegate.swift in Sources */,
@@ -305,26 +387,33 @@
 		};
 		BF1228DF1EB6C2C10044970B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AE7BB052906D2C6FBFE4736F /* Pods-ofo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = ofo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = snsd.com.ofo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "ofo/ofo-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
 		BF1228E01EB6C2C10044970B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A643FC5ECDB3F1BD11B0325D /* Pods-ofo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = ofo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = snsd.com.ofo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "ofo/ofo-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
