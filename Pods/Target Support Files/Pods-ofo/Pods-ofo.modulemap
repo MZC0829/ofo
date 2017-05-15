@@ -1,0 +1,6 @@
+framework module Pods_ofo {
+  umbrella header "Pods-ofo-umbrella.h"
+
+  export *
+  module * { export * }
+}

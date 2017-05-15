@@ -4,7 +4,17 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>FTIndicator.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-ofo.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>SWRevealViewController.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -12,7 +22,17 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>876D2FE031BF816E85F1B833652E4EB7</key>
+		<key>5CA44CEE3A906E06D8DAC17D95F8C5BB</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>814280D3ED1C07416BF7F21785573EBF</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>A84DA1D502917E8956383E16DCBDC7CD</key>
 		<dict>
 			<key>primary</key>
 			<true/>

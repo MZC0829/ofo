@@ -7,8 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B43448620871665A103A3168 /* libPods-ofo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7000A158C1B9EBC700617E52 /* libPods-ofo.a */; };
-		BF027B771EB8A57F00BBE7FE /* MyAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF027B761EB8A57F00BBE7FE /* MyAnnotation.swift */; };
+		299B6BF0D87A284057ABBE14 /* Pods_ofo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76F8A01E7188C98867AF7E9A /* Pods_ofo.framework */; };
 		BF1228D01EB6C2C00044970B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF1228CF1EB6C2C00044970B /* AppDelegate.swift */; };
 		BF1228D21EB6C2C00044970B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF1228D11EB6C2C00044970B /* ViewController.swift */; };
 		BF1228D51EB6C2C00044970B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF1228D31EB6C2C00044970B /* Main.storyboard */; };
@@ -16,16 +15,16 @@
 		BF1228DA1EB6C2C00044970B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF1228D81EB6C2C00044970B /* LaunchScreen.storyboard */; };
 		BF1228E61EB6C39B0044970B /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF1228E51EB6C39B0044970B /* MapKit.framework */; };
 		BF1228E81EB6C6030044970B /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF1228E71EB6C6030044970B /* WebViewController.swift */; };
+		BF3622DA1EC60CF200A2EF87 /* AboutUsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF3622D91EC60CF200A2EF87 /* AboutUsTableViewController.swift */; };
 		BFDDACD81EBB517C00B8EABE /* LeftMenuTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFDDACD71EBB517C00B8EABE /* LeftMenuTableViewController.swift */; };
-		BFDDACDA1EBB70EF00B8EABE /* IndexTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFDDACD91EBB70EF00B8EABE /* IndexTableViewController.swift */; };
+		BFDEA5541EC778AC00E1E1C6 /* MyPinAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFDEA5531EC778AC00E1E1C6 /* MyPinAnnotation.swift */; };
 		BFE63CF41EC42F570060E725 /* 中国广东省深圳市南山区北环大道8188号 邮政编码_ 518055.gpx in Resources */ = {isa = PBXBuildFile; fileRef = BFE63CF31EC42F570060E725 /* 中国广东省深圳市南山区北环大道8188号 邮政编码_ 518055.gpx */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		7000A158C1B9EBC700617E52 /* libPods-ofo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ofo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		76F8A01E7188C98867AF7E9A /* Pods_ofo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ofo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A643FC5ECDB3F1BD11B0325D /* Pods-ofo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ofo.release.xcconfig"; path = "Pods/Target Support Files/Pods-ofo/Pods-ofo.release.xcconfig"; sourceTree = "<group>"; };
 		AE7BB052906D2C6FBFE4736F /* Pods-ofo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ofo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ofo/Pods-ofo.debug.xcconfig"; sourceTree = "<group>"; };
-		BF027B761EB8A57F00BBE7FE /* MyAnnotation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyAnnotation.swift; sourceTree = "<group>"; };
 		BF1228CC1EB6C2C00044970B /* ofo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ofo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF1228CF1EB6C2C00044970B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BF1228D11EB6C2C00044970B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -35,8 +34,9 @@
 		BF1228DB1EB6C2C10044970B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BF1228E51EB6C39B0044970B /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		BF1228E71EB6C6030044970B /* WebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
+		BF3622D91EC60CF200A2EF87 /* AboutUsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutUsTableViewController.swift; sourceTree = "<group>"; };
 		BFDDACD71EBB517C00B8EABE /* LeftMenuTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeftMenuTableViewController.swift; sourceTree = "<group>"; };
-		BFDDACD91EBB70EF00B8EABE /* IndexTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IndexTableViewController.swift; sourceTree = "<group>"; };
+		BFDEA5531EC778AC00E1E1C6 /* MyPinAnnotation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyPinAnnotation.swift; sourceTree = "<group>"; };
 		BFE63CF31EC42F570060E725 /* 中国广东省深圳市南山区北环大道8188号 邮政编码_ 518055.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = "中国广东省深圳市南山区北环大道8188号 邮政编码_ 518055.gpx"; path = "../中国广东省深圳市南山区北环大道8188号 邮政编码_ 518055.gpx"; sourceTree = "<group>"; };
 		BFE63CF51EC435EB0060E725 /* ofo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ofo-Bridging-Header.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -47,7 +47,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BF1228E61EB6C39B0044970B /* MapKit.framework in Frameworks */,
-				B43448620871665A103A3168 /* libPods-ofo.a in Frameworks */,
+				299B6BF0D87A284057ABBE14 /* Pods_ofo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -86,11 +86,11 @@
 			isa = PBXGroup;
 			children = (
 				BF1228CF1EB6C2C00044970B /* AppDelegate.swift */,
-				BFDDACD91EBB70EF00B8EABE /* IndexTableViewController.swift */,
 				BF1228D11EB6C2C00044970B /* ViewController.swift */,
 				BFDDACD71EBB517C00B8EABE /* LeftMenuTableViewController.swift */,
 				BF1228E71EB6C6030044970B /* WebViewController.swift */,
 				BF1228DB1EB6C2C10044970B /* Info.plist */,
+				BF3622D91EC60CF200A2EF87 /* AboutUsTableViewController.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -108,9 +108,9 @@
 			isa = PBXGroup;
 			children = (
 				BF1228D61EB6C2C00044970B /* Assets.xcassets */,
-				BF027B761EB8A57F00BBE7FE /* MyAnnotation.swift */,
-				BFE63CF31EC42F570060E725 /* 中国广东省深圳市南山区北环大道8188号 邮政编码_ 518055.gpx */,
 				BFE63CF51EC435EB0060E725 /* ofo-Bridging-Header.h */,
+				BFE63CF31EC42F570060E725 /* 中国广东省深圳市南山区北环大道8188号 邮政编码_ 518055.gpx */,
+				BFDEA5531EC778AC00E1E1C6 /* MyPinAnnotation.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -119,7 +119,7 @@
 			isa = PBXGroup;
 			children = (
 				BF1228E51EB6C39B0044970B /* MapKit.framework */,
-				7000A158C1B9EBC700617E52 /* libPods-ofo.a */,
+				76F8A01E7188C98867AF7E9A /* Pods_ofo.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -263,11 +263,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BFDEA5541EC778AC00E1E1C6 /* MyPinAnnotation.swift in Sources */,
 				BF1228D21EB6C2C00044970B /* ViewController.swift in Sources */,
 				BFDDACD81EBB517C00B8EABE /* LeftMenuTableViewController.swift in Sources */,
-				BFDDACDA1EBB70EF00B8EABE /* IndexTableViewController.swift in Sources */,
 				BF1228E81EB6C6030044970B /* WebViewController.swift in Sources */,
-				BF027B771EB8A57F00BBE7FE /* MyAnnotation.swift in Sources */,
+				BF3622DA1EC60CF200A2EF87 /* AboutUsTableViewController.swift in Sources */,
 				BF1228D01EB6C2C00044970B /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
