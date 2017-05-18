@@ -60,6 +60,9 @@
                                                 <state key="normal" title="立即用车" backgroundImage="HomePage_UseBike_h">
                                                     <color key="titleColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                 </state>
+                                                <connections>
+                                                    <segue destination="i5u-qD-hqM" kind="show" id="NOM-kg-lzC"/>
+                                                </connections>
                                             </button>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="eA0-No-Yb5">
                                                 <rect key="frame" x="220" y="12" width="60" height="76"/>
@@ -452,7 +455,7 @@
                                         <rect key="frame" x="0.0" y="35" width="375" height="80"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="r3G-hx-aXQ" id="Gqb-Ar-22a">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="79.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="79"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon" translatesAutoresizingMaskIntoConstraints="NO" id="2Ci-PN-rqj">
@@ -473,7 +476,7 @@
                                         <rect key="frame" x="0.0" y="115" width="375" height="80"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="y3P-dg-p0c" id="rKE-B1-uxv">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="79.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="79"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="      ofo 共享单车是全球第一个无桩共享单车出行平台，首创“单车共享”模式。用户只需在微信服务号或App输入车牌号，即可获得密码解锁用车，随取随用，随时随地。" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" highlighted="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KPZ-TJ-hRT">
@@ -501,7 +504,7 @@
                                         <rect key="frame" x="0.0" y="231" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="D7F-5c-5ie" id="a3L-v3-fB2">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dss-o9-FKc">
@@ -534,7 +537,7 @@
                                         <rect key="frame" x="0.0" y="275" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="fuh-AK-LFo" id="Xfs-Lt-FZl">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7X6-Ez-e6v">
@@ -567,7 +570,7 @@
                                         <rect key="frame" x="0.0" y="319" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="g0a-6i-q8V" id="X2p-Hw-RqZ">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nuL-ca-NmA">
@@ -611,6 +614,206 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rRf-fp-Kcq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1711.2" y="699.40029985007504"/>
+        </scene>
+        <!--Scan View Controller-->
+        <scene sceneID="242-nE-gGa">
+            <objects>
+                <viewController id="i5u-qD-hqM" customClass="ScanViewController" customModule="ofo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="o0w-1I-yok"/>
+                        <viewControllerLayoutGuide type="bottom" id="MBx-75-y4A"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="JS3-2m-Skr">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="oMv-qT-UZd">
+                                <rect key="frame" x="0.0" y="535" width="375" height="132"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="hOM-ub-qW9">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="133"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalCentering" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="ZCO-zf-hNl">
+                                                <rect key="frame" x="0.0" y="36" width="188" height="60"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HjE-hh-Qiw">
+                                                        <rect key="frame" x="71" y="0.0" width="45" height="45"/>
+                                                        <state key="normal" image="inputBlikeNo"/>
+                                                        <connections>
+                                                            <segue destination="7SH-C7-lOo" kind="show" id="VcL-HJ-I0Z"/>
+                                                        </connections>
+                                                    </button>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="手动输入车牌号" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4JW-La-byk">
+                                                        <rect key="frame" x="51" y="45" width="86" height="15"/>
+                                                        <fontDescription key="fontDescription" style="UICTFontTextStyleCaption1"/>
+                                                        <color key="textColor" cocoaTouchSystemColor="lightTextColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalCentering" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="atE-rR-zLA">
+                                                <rect key="frame" x="188" y="36" width="187" height="60"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k7K-wC-e19">
+                                                        <rect key="frame" x="71" y="0.0" width="45" height="45"/>
+                                                        <state key="normal" image="btn_unenableTorch_w"/>
+                                                        <connections>
+                                                            <action selector="funcBtnFlash:" destination="i5u-qD-hqM" eventType="touchUpInside" id="wuV-dh-83D"/>
+                                                        </connections>
+                                                    </button>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="手电筒" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hyq-pX-wxj">
+                                                        <rect key="frame" x="75" y="45" width="37" height="15"/>
+                                                        <fontDescription key="fontDescription" style="UICTFontTextStyleCaption1"/>
+                                                        <color key="textColor" cocoaTouchSystemColor="lightTextColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="hOM-ub-qW9" secondAttribute="trailing" id="4sE-5l-1sR"/>
+                                    <constraint firstItem="hOM-ub-qW9" firstAttribute="top" secondItem="oMv-qT-UZd" secondAttribute="top" id="Jg5-3u-dnd"/>
+                                    <constraint firstAttribute="bottom" secondItem="hOM-ub-qW9" secondAttribute="bottom" id="NfB-cJ-ME3"/>
+                                    <constraint firstItem="hOM-ub-qW9" firstAttribute="leading" secondItem="oMv-qT-UZd" secondAttribute="leading" id="sHc-D3-Fe4"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="MBx-75-y4A" firstAttribute="top" secondItem="oMv-qT-UZd" secondAttribute="bottom" id="7sc-ms-dd2"/>
+                            <constraint firstItem="oMv-qT-UZd" firstAttribute="leading" secondItem="JS3-2m-Skr" secondAttribute="leading" id="DgZ-fM-5Qi"/>
+                            <constraint firstItem="oMv-qT-UZd" firstAttribute="height" secondItem="JS3-2m-Skr" secondAttribute="height" multiplier="0.2" id="MxD-H1-udk"/>
+                            <constraint firstAttribute="trailing" secondItem="oMv-qT-UZd" secondAttribute="trailing" id="t2A-6d-xcw"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="nameBtnFlash" destination="k7K-wC-e19" id="wsc-7j-geH"/>
+                        <outlet property="panelView" destination="oMv-qT-UZd" id="dJ4-hn-ZVB"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1wL-c8-5cD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="741.60000000000002" y="-673.31334332833592"/>
+        </scene>
+        <!--Input Bike No View Controller-->
+        <scene sceneID="mCP-lc-oU0">
+            <objects>
+                <viewController id="7SH-C7-lOo" customClass="InputBikeNoViewController" customModule="ofo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="2xO-Do-fu2"/>
+                        <viewControllerLayoutGuide type="bottom" id="xI3-UG-2Rh"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="aDu-aX-ulJ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1dS-UQ-xVY">
+                                <rect key="frame" x="0.0" y="72" width="375" height="210"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="inputPageImage" translatesAutoresizingMaskIntoConstraints="NO" id="lUB-QM-OsC">
+                                        <rect key="frame" x="10" y="0.0" width="339" height="117"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="计费说明：1元/小时" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kkd-rb-cqZ">
+                                        <rect key="frame" x="125.5" y="132" width="108" height="14.5"/>
+                                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleCaption1"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="wWM-L1-n6Q">
+                                        <rect key="frame" x="10" y="161.5" width="339" height="50"/>
+                                        <subviews>
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="请输入车牌号" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="FH3-bY-qZT">
+                                                <rect key="frame" x="0.0" y="0.0" width="284" height="50"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="H3Q-Nu-VAR"/>
+                                                </constraints>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" name="Thonburi-Bold" family="Thonburi" pointSize="26"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Sm-7D-77l">
+                                                <rect key="frame" x="289" y="0.0" width="50" height="50"/>
+                                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="50" id="Kqb-Dz-Jw2"/>
+                                                    <constraint firstAttribute="height" constant="50" id="qJN-vN-Mfk"/>
+                                                </constraints>
+                                                <state key="normal" image="nextArrow_unenable"/>
+                                                <connections>
+                                                    <action selector="funcGetPasswordButton:" destination="7SH-C7-lOo" eventType="touchUpInside" id="04P-En-HEH"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="输入车牌号，获取解锁码" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rqp-Si-z8s">
+                                        <rect key="frame" x="108" y="193" width="158" height="17"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="rqp-Si-z8s" firstAttribute="top" secondItem="FH3-bY-qZT" secondAttribute="bottom" constant="15" id="5EQ-N2-QUa"/>
+                                    <constraint firstItem="wWM-L1-n6Q" firstAttribute="centerX" secondItem="1dS-UQ-xVY" secondAttribute="centerX" id="61G-kb-UY4"/>
+                                    <constraint firstItem="lUB-QM-OsC" firstAttribute="top" secondItem="1dS-UQ-xVY" secondAttribute="top" id="7Vs-Pt-RdF"/>
+                                    <constraint firstAttribute="trailing" secondItem="lUB-QM-OsC" secondAttribute="trailing" constant="10" id="7Wm-6s-gng"/>
+                                    <constraint firstAttribute="trailing" secondItem="wWM-L1-n6Q" secondAttribute="trailing" constant="10" id="8VU-vg-73y"/>
+                                    <constraint firstItem="lUB-QM-OsC" firstAttribute="leading" secondItem="1dS-UQ-xVY" secondAttribute="leading" constant="10" id="E6R-lg-ZNg"/>
+                                    <constraint firstItem="Kkd-rb-cqZ" firstAttribute="top" secondItem="lUB-QM-OsC" secondAttribute="bottom" constant="15" id="OSg-kS-cOl"/>
+                                    <constraint firstItem="wWM-L1-n6Q" firstAttribute="top" secondItem="Kkd-rb-cqZ" secondAttribute="bottom" constant="15" id="PGi-6P-Dc0"/>
+                                    <constraint firstItem="rqp-Si-z8s" firstAttribute="centerX" secondItem="1dS-UQ-xVY" secondAttribute="centerX" id="Ymr-LT-pec"/>
+                                    <constraint firstItem="wWM-L1-n6Q" firstAttribute="leading" secondItem="1dS-UQ-xVY" secondAttribute="leading" constant="10" id="fF0-2o-BAm"/>
+                                    <constraint firstItem="Kkd-rb-cqZ" firstAttribute="centerX" secondItem="1dS-UQ-xVY" secondAttribute="centerX" id="zbE-Qy-rfl"/>
+                                </constraints>
+                            </view>
+                            <stackView opaque="NO" contentMode="center" distribution="equalSpacing" alignment="center" spacing="60" translatesAutoresizingMaskIntoConstraints="NO" id="ajR-9C-Sla">
+                                <rect key="frame" x="112.5" y="347" width="150" height="45"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="epN-ev-fAq">
+                                        <rect key="frame" x="0.0" y="0.0" width="45" height="45"/>
+                                        <state key="normal" image="btn_unenableTorch"/>
+                                        <connections>
+                                            <action selector="funcFlashBtn:" destination="7SH-C7-lOo" eventType="touchUpInside" id="Rc9-Pd-W53"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e0U-wH-m8r">
+                                        <rect key="frame" x="105" y="0.0" width="45" height="45"/>
+                                        <state key="normal" image="voiceopen"/>
+                                        <connections>
+                                            <action selector="funcVoiceBtn:" destination="7SH-C7-lOo" eventType="touchUpInside" id="9TW-Oj-Kmd"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="1dS-UQ-xVY" firstAttribute="height" secondItem="aDu-aX-ulJ" secondAttribute="height" multiplier="0.4" id="QWq-Ez-uyE"/>
+                            <constraint firstItem="ajR-9C-Sla" firstAttribute="centerX" secondItem="aDu-aX-ulJ" secondAttribute="centerX" id="cAa-du-PBq"/>
+                            <constraint firstItem="1dS-UQ-xVY" firstAttribute="leading" secondItem="aDu-aX-ulJ" secondAttribute="leading" constant="8" id="eEf-GL-X4R"/>
+                            <constraint firstItem="1dS-UQ-xVY" firstAttribute="top" secondItem="2xO-Do-fu2" secondAttribute="bottom" constant="8" id="i8m-pa-67v"/>
+                            <constraint firstAttribute="trailing" secondItem="1dS-UQ-xVY" secondAttribute="trailing" constant="8" id="tyR-pe-ruD"/>
+                            <constraint firstItem="ajR-9C-Sla" firstAttribute="top" secondItem="1dS-UQ-xVY" secondAttribute="bottom" constant="8" id="z54-Od-WzG"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="nameFlashBtn" destination="epN-ev-fAq" id="OGv-j9-spQ"/>
+                        <outlet property="nameGetPasswordButton" destination="2Sm-7D-77l" id="rYJ-FJ-Ssa"/>
+                        <outlet property="nameInputBikeNoText" destination="FH3-bY-qZT" id="ndp-Qj-8QF"/>
+                        <outlet property="nameInputBikeNoTopView" destination="1dS-UQ-xVY" id="Kfx-qj-VJy"/>
+                        <outlet property="nameInputPageImage" destination="lUB-QM-OsC" id="pjd-7T-W9W"/>
+                        <outlet property="nameShowCostLabel" destination="Kkd-rb-cqZ" id="FvS-A1-aUc"/>
+                        <outlet property="nameVoiceBtn" destination="e0U-wH-m8r" id="cvI-Df-GMh"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6c8-Zd-gih" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1501.5999999999999" y="-674.21289355322347"/>
         </scene>
         <!--Web View Controller-->
         <scene sceneID="cas-AL-nRb">
@@ -701,9 +904,15 @@
         <image name="HomePage_UserGuide" width="20" height="20"/>
         <image name="RedPacketBike" width="340" height="135"/>
         <image name="UserInfo_defaultIcon" width="120" height="120"/>
+        <image name="btn_unenableTorch" width="45" height="45"/>
+        <image name="btn_unenableTorch_w" width="45" height="45"/>
         <image name="icon" width="60" height="60"/>
+        <image name="inputBlikeNo" width="45" height="45"/>
+        <image name="inputPageImage" width="340" height="117"/>
         <image name="leftBottomImage" width="60" height="60"/>
+        <image name="nextArrow_unenable" width="25" height="19"/>
         <image name="rightBottomImage" width="60" height="60"/>
+        <image name="voiceopen" width="45" height="45"/>
         <image name="whiteImage" width="375" height="263"/>
     </resources>
 </document>

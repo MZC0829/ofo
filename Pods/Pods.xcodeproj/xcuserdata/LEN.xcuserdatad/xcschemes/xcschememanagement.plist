@@ -4,6 +4,16 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>APNumberPad-APNumberPad.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>APNumberPad.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>FTIndicator.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -19,20 +29,40 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>swiftScan.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>5CA44CEE3A906E06D8DAC17D95F8C5BB</key>
+		<key>08C6327A7B0882C99DB40882BE330BD4</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>814280D3ED1C07416BF7F21785573EBF</key>
+		<key>10409D9479E1C05B185563FCD11E2A73</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>5C8D875EA6AA4410B964FD5D1AC1EFF6</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>9D4B6FDB3E780E1F7D0C83841D66D721</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
 		<key>A84DA1D502917E8956383E16DCBDC7CD</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>B2095A0783C3613FE2D11BC34CE7F2FE</key>
 		<dict>
 			<key>primary</key>
 			<true/>
