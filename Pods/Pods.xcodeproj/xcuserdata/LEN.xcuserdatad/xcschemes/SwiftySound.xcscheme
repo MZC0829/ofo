@@ -14,10 +14,10 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '3E34E9EB5A60BD0430076919D98670FB'
-               BlueprintName = 'SWRevealViewController'
+               BlueprintIdentifier = 'E87A52D53313324F76F39273A9EF380F'
+               BlueprintName = 'SwiftySound'
                ReferencedContainer = 'container:Pods.xcodeproj'
-               BuildableName = 'SWRevealViewController.framework'>
+               BuildableName = 'SwiftySound.framework'>
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>

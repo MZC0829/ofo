@@ -19,6 +19,23 @@
 		BF1228E81EB6C6030044970B /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF1228E71EB6C6030044970B /* WebViewController.swift */; };
 		BF13786C1ECABA7A00DF7C75 /* ScanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF13786B1ECABA7A00DF7C75 /* ScanViewController.swift */; };
 		BF3622DA1EC60CF200A2EF87 /* AboutUsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF3622D91EC60CF200A2EF87 /* AboutUsTableViewController.swift */; };
+		BF5E38281ED00073005D0B4F /* InputDiscountCodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF5E38271ED00073005D0B4F /* InputDiscountCodeViewController.swift */; };
+		BF79ACCD1ED32FBC00D38AFA /* SendSuggestionTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF79ACCC1ED32FBC00D38AFA /* SendSuggestionTableViewController.swift */; };
+		BFC108EB1ED13D0F00AA7B6C /* 0.m4a in Resources */ = {isa = PBXBuildFile; fileRef = BFC108DE1ED13D0F00AA7B6C /* 0.m4a */; };
+		BFC108EC1ED13D0F00AA7B6C /* 1.m4a in Resources */ = {isa = PBXBuildFile; fileRef = BFC108DF1ED13D0F00AA7B6C /* 1.m4a */; };
+		BFC108ED1ED13D0F00AA7B6C /* 2.m4a in Resources */ = {isa = PBXBuildFile; fileRef = BFC108E01ED13D0F00AA7B6C /* 2.m4a */; };
+		BFC108EE1ED13D0F00AA7B6C /* 3.m4a in Resources */ = {isa = PBXBuildFile; fileRef = BFC108E11ED13D0F00AA7B6C /* 3.m4a */; };
+		BFC108EF1ED13D0F00AA7B6C /* 4.m4a in Resources */ = {isa = PBXBuildFile; fileRef = BFC108E21ED13D0F00AA7B6C /* 4.m4a */; };
+		BFC108F01ED13D0F00AA7B6C /* 5.m4a in Resources */ = {isa = PBXBuildFile; fileRef = BFC108E31ED13D0F00AA7B6C /* 5.m4a */; };
+		BFC108F11ED13D0F00AA7B6C /* 6.m4a in Resources */ = {isa = PBXBuildFile; fileRef = BFC108E41ED13D0F00AA7B6C /* 6.m4a */; };
+		BFC108F21ED13D0F00AA7B6C /* 7.m4a in Resources */ = {isa = PBXBuildFile; fileRef = BFC108E51ED13D0F00AA7B6C /* 7.m4a */; };
+		BFC108F31ED13D0F00AA7B6C /* 8.m4a in Resources */ = {isa = PBXBuildFile; fileRef = BFC108E61ED13D0F00AA7B6C /* 8.m4a */; };
+		BFC108F41ED13D0F00AA7B6C /* 9.m4a in Resources */ = {isa = PBXBuildFile; fileRef = BFC108E71ED13D0F00AA7B6C /* 9.m4a */; };
+		BFC108F51ED13D0F00AA7B6C /* 您的解锁码为.m4a in Resources */ = {isa = PBXBuildFile; fileRef = BFC108E81ED13D0F00AA7B6C /* 您的解锁码为.m4a */; };
+		BFC108F61ED13D0F00AA7B6C /* 骑行结束.m4a in Resources */ = {isa = PBXBuildFile; fileRef = BFC108E91ED13D0F00AA7B6C /* 骑行结束.m4a */; };
+		BFC108F71ED13D0F00AA7B6C /* 上车前.m4a in Resources */ = {isa = PBXBuildFile; fileRef = BFC108EA1ED13D0F00AA7B6C /* 上车前.m4a */; };
+		BFCFFCBA1ECF4D9C00EDE20F /* GetPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFCFFCB91ECF4D9C00EDE20F /* GetPasswordViewController.swift */; };
+		BFCFFCBC1ECF548500EDE20F /* UIViewHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFCFFCBB1ECF548500EDE20F /* UIViewHelper.swift */; };
 		BFDDACD81EBB517C00B8EABE /* LeftMenuTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFDDACD71EBB517C00B8EABE /* LeftMenuTableViewController.swift */; };
 		BFDEA5541EC778AC00E1E1C6 /* MyPinAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFDEA5531EC778AC00E1E1C6 /* MyPinAnnotation.swift */; };
 		BFE63CF41EC42F570060E725 /* 中国广东省深圳市南山区北环大道8188号 邮政编码_ 518055.gpx in Resources */ = {isa = PBXBuildFile; fileRef = BFE63CF31EC42F570060E725 /* 中国广东省深圳市南山区北环大道8188号 邮政编码_ 518055.gpx */; };
@@ -41,6 +58,23 @@
 		BF1228E71EB6C6030044970B /* WebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
 		BF13786B1ECABA7A00DF7C75 /* ScanViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScanViewController.swift; sourceTree = "<group>"; };
 		BF3622D91EC60CF200A2EF87 /* AboutUsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutUsTableViewController.swift; sourceTree = "<group>"; };
+		BF5E38271ED00073005D0B4F /* InputDiscountCodeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InputDiscountCodeViewController.swift; sourceTree = "<group>"; };
+		BF79ACCC1ED32FBC00D38AFA /* SendSuggestionTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SendSuggestionTableViewController.swift; sourceTree = "<group>"; };
+		BFC108DE1ED13D0F00AA7B6C /* 0.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = 0.m4a; sourceTree = "<group>"; };
+		BFC108DF1ED13D0F00AA7B6C /* 1.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = 1.m4a; sourceTree = "<group>"; };
+		BFC108E01ED13D0F00AA7B6C /* 2.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = 2.m4a; sourceTree = "<group>"; };
+		BFC108E11ED13D0F00AA7B6C /* 3.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = 3.m4a; sourceTree = "<group>"; };
+		BFC108E21ED13D0F00AA7B6C /* 4.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = 4.m4a; sourceTree = "<group>"; };
+		BFC108E31ED13D0F00AA7B6C /* 5.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = 5.m4a; sourceTree = "<group>"; };
+		BFC108E41ED13D0F00AA7B6C /* 6.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = 6.m4a; sourceTree = "<group>"; };
+		BFC108E51ED13D0F00AA7B6C /* 7.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = 7.m4a; sourceTree = "<group>"; };
+		BFC108E61ED13D0F00AA7B6C /* 8.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = 8.m4a; sourceTree = "<group>"; };
+		BFC108E71ED13D0F00AA7B6C /* 9.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = 9.m4a; sourceTree = "<group>"; };
+		BFC108E81ED13D0F00AA7B6C /* 您的解锁码为.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "您的解锁码为.m4a"; sourceTree = "<group>"; };
+		BFC108E91ED13D0F00AA7B6C /* 骑行结束.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "骑行结束.m4a"; sourceTree = "<group>"; };
+		BFC108EA1ED13D0F00AA7B6C /* 上车前.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "上车前.m4a"; sourceTree = "<group>"; };
+		BFCFFCB91ECF4D9C00EDE20F /* GetPasswordViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetPasswordViewController.swift; sourceTree = "<group>"; };
+		BFCFFCBB1ECF548500EDE20F /* UIViewHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewHelper.swift; sourceTree = "<group>"; };
 		BFDDACD71EBB517C00B8EABE /* LeftMenuTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeftMenuTableViewController.swift; sourceTree = "<group>"; };
 		BFDEA5531EC778AC00E1E1C6 /* MyPinAnnotation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyPinAnnotation.swift; sourceTree = "<group>"; };
 		BFE63CF31EC42F570060E725 /* 中国广东省深圳市南山区北环大道8188号 邮政编码_ 518055.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = "中国广东省深圳市南山区北环大道8188号 邮政编码_ 518055.gpx"; path = "../中国广东省深圳市南山区北环大道8188号 邮政编码_ 518055.gpx"; sourceTree = "<group>"; };
@@ -94,9 +128,12 @@
 				BF1228CF1EB6C2C00044970B /* AppDelegate.swift */,
 				BF1228D11EB6C2C00044970B /* ViewController.swift */,
 				BFDDACD71EBB517C00B8EABE /* LeftMenuTableViewController.swift */,
+				BF79ACCC1ED32FBC00D38AFA /* SendSuggestionTableViewController.swift */,
 				BF1228E71EB6C6030044970B /* WebViewController.swift */,
 				BF13786B1ECABA7A00DF7C75 /* ScanViewController.swift */,
 				BF0ADFB91ECDCBA700293BD2 /* InputBikeNoViewController.swift */,
+				BFCFFCB91ECF4D9C00EDE20F /* GetPasswordViewController.swift */,
+				BF5E38271ED00073005D0B4F /* InputDiscountCodeViewController.swift */,
 				BF3622D91EC60CF200A2EF87 /* AboutUsTableViewController.swift */,
 				BF1228DB1EB6C2C10044970B /* Info.plist */,
 			);
@@ -115,11 +152,13 @@
 		BF1228E31EB6C2E50044970B /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				BFC108DD1ED13CE900AA7B6C /* Voice */,
 				BF1228D61EB6C2C00044970B /* Assets.xcassets */,
 				BFE63CF51EC435EB0060E725 /* ofo-Bridging-Header.h */,
 				BFE63CF31EC42F570060E725 /* 中国广东省深圳市南山区北环大道8188号 邮政编码_ 518055.gpx */,
 				BFDEA5531EC778AC00E1E1C6 /* MyPinAnnotation.swift */,
 				BF0ADFBB1ECDD11000293BD2 /* ColorHelper.swift */,
+				BFCFFCBB1ECF548500EDE20F /* UIViewHelper.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -140,6 +179,26 @@
 				A643FC5ECDB3F1BD11B0325D /* Pods-ofo.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		BFC108DD1ED13CE900AA7B6C /* Voice */ = {
+			isa = PBXGroup;
+			children = (
+				BFC108DE1ED13D0F00AA7B6C /* 0.m4a */,
+				BFC108DF1ED13D0F00AA7B6C /* 1.m4a */,
+				BFC108E01ED13D0F00AA7B6C /* 2.m4a */,
+				BFC108E11ED13D0F00AA7B6C /* 3.m4a */,
+				BFC108E21ED13D0F00AA7B6C /* 4.m4a */,
+				BFC108E31ED13D0F00AA7B6C /* 5.m4a */,
+				BFC108E41ED13D0F00AA7B6C /* 6.m4a */,
+				BFC108E51ED13D0F00AA7B6C /* 7.m4a */,
+				BFC108E61ED13D0F00AA7B6C /* 8.m4a */,
+				BFC108E71ED13D0F00AA7B6C /* 9.m4a */,
+				BFC108E81ED13D0F00AA7B6C /* 您的解锁码为.m4a */,
+				BFC108E91ED13D0F00AA7B6C /* 骑行结束.m4a */,
+				BFC108EA1ED13D0F00AA7B6C /* 上车前.m4a */,
+			);
+			name = Voice;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -210,10 +269,23 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BFC108F21ED13D0F00AA7B6C /* 7.m4a in Resources */,
+				BFC108F11ED13D0F00AA7B6C /* 6.m4a in Resources */,
+				BFC108F41ED13D0F00AA7B6C /* 9.m4a in Resources */,
+				BFC108EE1ED13D0F00AA7B6C /* 3.m4a in Resources */,
+				BFC108EC1ED13D0F00AA7B6C /* 1.m4a in Resources */,
 				BF1228DA1EB6C2C00044970B /* LaunchScreen.storyboard in Resources */,
+				BFC108ED1ED13D0F00AA7B6C /* 2.m4a in Resources */,
+				BFC108F71ED13D0F00AA7B6C /* 上车前.m4a in Resources */,
+				BFC108F61ED13D0F00AA7B6C /* 骑行结束.m4a in Resources */,
+				BFC108F01ED13D0F00AA7B6C /* 5.m4a in Resources */,
 				BF1228D71EB6C2C00044970B /* Assets.xcassets in Resources */,
+				BFC108F31ED13D0F00AA7B6C /* 8.m4a in Resources */,
 				BF1228D51EB6C2C00044970B /* Main.storyboard in Resources */,
+				BFC108F51ED13D0F00AA7B6C /* 您的解锁码为.m4a in Resources */,
+				BFC108EF1ED13D0F00AA7B6C /* 4.m4a in Resources */,
 				BFE63CF41EC42F570060E725 /* 中国广东省深圳市南山区北环大道8188号 邮政编码_ 518055.gpx in Resources */,
+				BFC108EB1ED13D0F00AA7B6C /* 0.m4a in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -273,14 +345,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				BFDEA5541EC778AC00E1E1C6 /* MyPinAnnotation.swift in Sources */,
+				BFCFFCBC1ECF548500EDE20F /* UIViewHelper.swift in Sources */,
 				BF0ADFBA1ECDCBA700293BD2 /* InputBikeNoViewController.swift in Sources */,
+				BF79ACCD1ED32FBC00D38AFA /* SendSuggestionTableViewController.swift in Sources */,
 				BF13786C1ECABA7A00DF7C75 /* ScanViewController.swift in Sources */,
 				BF1228D21EB6C2C00044970B /* ViewController.swift in Sources */,
+				BFCFFCBA1ECF4D9C00EDE20F /* GetPasswordViewController.swift in Sources */,
 				BF0ADFBC1ECDD11000293BD2 /* ColorHelper.swift in Sources */,
 				BFDDACD81EBB517C00B8EABE /* LeftMenuTableViewController.swift in Sources */,
 				BF1228E81EB6C6030044970B /* WebViewController.swift in Sources */,
 				BF3622DA1EC60CF200A2EF87 /* AboutUsTableViewController.swift in Sources */,
 				BF1228D01EB6C2C00044970B /* AppDelegate.swift in Sources */,
+				BF5E38281ED00073005D0B4F /* InputDiscountCodeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

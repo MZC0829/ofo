@@ -8,4 +8,6 @@ target ‘ofo’ do
     pod 'FTIndicator'
     pod 'swiftScan', '~> 1.0.9'
     pod 'APNumberPad'
+    pod 'SwiftyTimer'
+    pod 'SwiftySound'
 end

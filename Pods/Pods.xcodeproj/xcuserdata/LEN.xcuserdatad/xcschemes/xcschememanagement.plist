@@ -29,6 +29,16 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>SwiftySound.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>SwiftyTimer.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>swiftScan.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -37,12 +47,12 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>08C6327A7B0882C99DB40882BE330BD4</key>
+		<key>10409D9479E1C05B185563FCD11E2A73</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>10409D9479E1C05B185563FCD11E2A73</key>
+		<key>3E34E9EB5A60BD0430076919D98670FB</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -52,7 +62,7 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>9D4B6FDB3E780E1F7D0C83841D66D721</key>
+		<key>823D88B4ECD171E7D8D4D0001FFFE13F</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -62,7 +72,17 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>B2095A0783C3613FE2D11BC34CE7F2FE</key>
+		<key>AB8AC2F3BA76D7190E84D8FA0F86FE26</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>CBF023CCEF7D021D2FC2A9D4BD372907</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>E87A52D53313324F76F39273A9EF380F</key>
 		<dict>
 			<key>primary</key>
 			<true/>

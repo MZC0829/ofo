@@ -24,14 +24,28 @@ class ViewController: UIViewController,MAMapViewDelegate,AMapSearchDelegate,AMap
     
     @IBOutlet weak var nameUIViewHomePageBottom: UIView!
     
+    // 首页刷新定位按钮
+    @IBOutlet weak var nameRefreshLocationBtn: UIButton!
+    // 首页刷新定位按钮事件
     @IBAction func funcSearchNearByBike(_ sender: UIButton)
     {
         
         let pinStartLocation = userCurrentLocation!
-        //mapView.centerCoordinate = mapView.centerCoordinate
         
-        UIView.animate(withDuration: 2, delay: 0, options: UIViewAnimationOptions.allowUserInteraction, animations: {
+        
+        
+        nameRefreshLocationBtn.setImage(#imageLiteral(resourceName: "leftBottomRefreshImage"), for: .normal)
+        nameRefreshLocationBtn.setBackgroundImage(#imageLiteral(resourceName: "leftBottomBackgroundImage"), for: .normal)
+        
+        nameRefreshLocationBtn.transform = CGAffineTransform(rotationAngle: 0)
+        
+        UIView.animate(withDuration: 1, delay: 0, options: UIViewAnimationOptions.curveLinear, animations: {
+            
             self.mapView.centerCoordinate = pinStartLocation
+            
+            
+            
+            self.nameRefreshLocationBtn.transform = CGAffineTransform(rotationAngle: CGFloat(M_PI))
         }, completion: nil)
         
         
@@ -57,6 +71,8 @@ class ViewController: UIViewController,MAMapViewDelegate,AMapSearchDelegate,AMap
         mapView.zoomLevel = 17
         self.view.addSubview(mapView)
         
+        
+        
         //加载主页面的底部面部，在前面显示
         self.view.bringSubview(toFront: nameUIViewHomePageBottom)
         
@@ -79,7 +95,7 @@ class ViewController: UIViewController,MAMapViewDelegate,AMapSearchDelegate,AMap
         if self.revealViewController() != nil
         {
             self.revealViewController().rearViewRevealWidth = 280
-            navigationItem.leftBarButtonItem?.target = revealViewController()
+            navigationItem.leftBarButtonItem?.target = self.revealViewController()
             navigationItem.leftBarButtonItem?.action = #selector(SWRevealViewController.revealToggle(_:))
             self.view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
         }
@@ -115,19 +131,19 @@ class ViewController: UIViewController,MAMapViewDelegate,AMapSearchDelegate,AMap
     func mapInitComplete(_ mapView: MAMapView!)
     {
         //初始化
-        //userCurrentLocation = CLLocationCoordinate2D()
-        userCurrentLocation = CLLocationCoordinate2D(latitude: 22.560127 , longitude: 113.974397)
+        userCurrentLocation = CLLocationCoordinate2D()
+        //userCurrentLocation = CLLocationCoordinate2D(latitude: 22.560127 , longitude: 113.974397)
         //获取用户当前位置
         userCurrentLocation = mapView.userLocation.coordinate
         //范围
         let span = MACoordinateSpan(latitudeDelta: 0.005, longitudeDelta: 0.005)
         mapView.region = MACoordinateRegion(center: userCurrentLocation, span: span)
         
-        
         userLocationAnnotation = MyPinAnnotation()
         userLocationAnnotation.coordinate = mapView.centerCoordinate
         
         userLocationAnnotation.lockedScreenPoint = CGPoint(x: view.bounds.width/2, y: view.bounds.height/2)
+        //userLocationAnnotation.lockedScreenPoint = CGPoint(x: view.frame.width/2, y: view.frame.height/2)
         userLocationAnnotation.isLockedToScreen = true
         
         mapView.addAnnotation(userLocationAnnotation)

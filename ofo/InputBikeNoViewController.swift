@@ -13,6 +13,7 @@ class InputBikeNoViewController: UIViewController,APNumberPadDelegate,UITextFiel
 {
     var isFlashOn = false
     var isVoiceOn = true
+    
 
     @IBOutlet weak var nameInputBikeNoTopView: UIView!
     @IBOutlet weak var nameInputPageImage: UIImageView!
@@ -24,11 +25,16 @@ class InputBikeNoViewController: UIViewController,APNumberPadDelegate,UITextFiel
     
     @IBAction func funcGetPasswordButton(_ sender: UIButton)
     {
+        let vc = GetPasswordViewController()
+        vc.bikeNo = nameInputBikeNoText.text!
     }
     //声音按钮状态切换
     @IBAction func funcVoiceBtn(_ sender: UIButton)
     {
         isVoiceOn = !isVoiceOn
+        
+        turnVoice(voiceButton: nameVoiceBtn)
+        
         if isVoiceOn
         {
             nameVoiceBtn.setImage(#imageLiteral(resourceName: "voiceopen"), for: .normal)
@@ -58,6 +64,8 @@ class InputBikeNoViewController: UIViewController,APNumberPadDelegate,UITextFiel
     override func viewDidLoad()
     {
         super.viewDidLoad()
+        
+        nameGetPasswordButton.isEnabled = false
         self.title = "车辆解锁"
         
         //使用第三方键盘
@@ -90,8 +98,14 @@ class InputBikeNoViewController: UIViewController,APNumberPadDelegate,UITextFiel
     func numberPad(_ numberPad: APNumberPad, functionButtonAction functionButton: UIButton, textInput: UIResponder)
     {
         print("你点击了键盘")
+        if !nameInputBikeNoText.text!.isEmpty
+        {
+            performSegue(withIdentifier: "showPassword", sender: self)
+        }
+        
     }
     
+    // 输入车牌号码
     func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool
     {
         guard let text = textField.text else {
@@ -104,11 +118,16 @@ class InputBikeNoViewController: UIViewController,APNumberPadDelegate,UITextFiel
         {
             nameGetPasswordButton.setImage(#imageLiteral(resourceName: "nextArrow_enable"), for: .normal)
             nameGetPasswordButton.backgroundColor = UIColor.ofo
+            
+            nameGetPasswordButton.isEnabled = true
+            
         }
         else
         {
             nameGetPasswordButton.setImage(#imageLiteral(resourceName: "nextArrow_unenable"), for: .normal)
             nameGetPasswordButton.backgroundColor = UIColor.groupTableViewBackground
+            
+            nameGetPasswordButton.isEnabled = false
         }
         
         return newLength <= 8
