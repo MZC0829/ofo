@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import AVOSCloud
+import LeanCloud
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -18,6 +20,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     {
         AMapServices.shared().apiKey = "f6d05a4ce4da25b5c42266899da289a7"
         AMapServices.shared().enableHTTPS = true
+        
+        AVOSCloud.setApplicationId("hBnK5M4fXXXYojkzfq8j4RjH-gzGzoHsz", clientKey: "soNIq8xJuOaVIImnSO55UWS7")
+        //LeanCloud.initialize(applicationID: "hBnK5M4fXXXYojkzfq8j4RjH-gzGzoHsz", applicationKey: "soNIq8xJuOaVIImnSO55UWS7")
         
         return true
     }

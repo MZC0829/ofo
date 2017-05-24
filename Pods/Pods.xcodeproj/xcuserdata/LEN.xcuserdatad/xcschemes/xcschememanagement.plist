@@ -14,7 +14,22 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>AVOSCloud.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Alamofire.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>FTIndicator.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>LeanCloud.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -52,7 +67,17 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>3E34E9EB5A60BD0430076919D98670FB</key>
+		<key>131C9F74F631E8BAD4BA7A18C8B0DEC9</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>2D47373207A5FDDBABFDB32951CD5C0E</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>3E01143F3C6C5F4C651109AE4A7F4DAA</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -62,7 +87,17 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>823D88B4ECD171E7D8D4D0001FFFE13F</key>
+		<key>82117D57807A8B618E4B313A02FD7592</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>853499F7ED64E82906DD78760D5D0F17</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>88E9EC28B8B46C3631E6B242B50F4442</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -72,17 +107,12 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>AB8AC2F3BA76D7190E84D8FA0F86FE26</key>
+		<key>ACFD5B30B5F27985613585B4104DB8A1</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>CBF023CCEF7D021D2FC2A9D4BD372907</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>E87A52D53313324F76F39273A9EF380F</key>
+		<key>E37E4FCBFAA7AF6064C2F653DD9AA45E</key>
 		<dict>
 			<key>primary</key>
 			<true/>

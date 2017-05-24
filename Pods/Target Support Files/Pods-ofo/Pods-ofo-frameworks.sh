@@ -90,7 +90,10 @@ strip_invalid_archs() {
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "$BUILT_PRODUCTS_DIR/APNumberPad/APNumberPad.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/AVOSCloud/AVOSCloud.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/Alamofire/Alamofire.framework"
   install_framework "$BUILT_PRODUCTS_DIR/FTIndicator/FTIndicator.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/LeanCloud/LeanCloud.framework"
   install_framework "$BUILT_PRODUCTS_DIR/SWRevealViewController/SWRevealViewController.framework"
   install_framework "$BUILT_PRODUCTS_DIR/SwiftySound/SwiftySound.framework"
   install_framework "$BUILT_PRODUCTS_DIR/SwiftyTimer/SwiftyTimer.framework"
@@ -98,7 +101,10 @@ if [[ "$CONFIGURATION" == "Debug" ]]; then
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "$BUILT_PRODUCTS_DIR/APNumberPad/APNumberPad.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/AVOSCloud/AVOSCloud.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/Alamofire/Alamofire.framework"
   install_framework "$BUILT_PRODUCTS_DIR/FTIndicator/FTIndicator.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/LeanCloud/LeanCloud.framework"
   install_framework "$BUILT_PRODUCTS_DIR/SWRevealViewController/SWRevealViewController.framework"
   install_framework "$BUILT_PRODUCTS_DIR/SwiftySound/SwiftySound.framework"
   install_framework "$BUILT_PRODUCTS_DIR/SwiftyTimer/SwiftyTimer.framework"

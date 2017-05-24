@@ -27,7 +27,9 @@ class InputBikeNoViewController: UIViewController,APNumberPadDelegate,UITextFiel
     {
         let vc = GetPasswordViewController()
         vc.bikeNo = nameInputBikeNoText.text!
+        
     }
+    
     //声音按钮状态切换
     @IBAction func funcVoiceBtn(_ sender: UIButton)
     {
@@ -139,14 +141,30 @@ class InputBikeNoViewController: UIViewController,APNumberPadDelegate,UITextFiel
     }
     
 
-    /*
+    
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?)
+    {
+        if segue.identifier == "showPassword"
+        {
+            let toVC = segue.destination as! GetPasswordViewController
+            let bikeNo = nameInputBikeNoText.text!
+            toVC.bikeNo = bikeNo
+            
+            NetworkHelper.getPassword(bikeNo: bikeNo, completion: { (pass) in
+                
+                if let pass = pass {
+                    toVC.bikePasswordArray = pass.characters.map{
+                        
+                        return $0.description
+                    }
+                }
+                else {
+                    print("车牌有误")
+                }
+            })
+       }
+   }
 }

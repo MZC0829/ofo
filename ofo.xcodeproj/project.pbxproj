@@ -36,6 +36,7 @@
 		BFC108F71ED13D0F00AA7B6C /* 上车前.m4a in Resources */ = {isa = PBXBuildFile; fileRef = BFC108EA1ED13D0F00AA7B6C /* 上车前.m4a */; };
 		BFCFFCBA1ECF4D9C00EDE20F /* GetPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFCFFCB91ECF4D9C00EDE20F /* GetPasswordViewController.swift */; };
 		BFCFFCBC1ECF548500EDE20F /* UIViewHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFCFFCBB1ECF548500EDE20F /* UIViewHelper.swift */; };
+		BFD842A31ED4995D00588991 /* NetworkHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFD842A21ED4995D00588991 /* NetworkHelper.swift */; };
 		BFDDACD81EBB517C00B8EABE /* LeftMenuTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFDDACD71EBB517C00B8EABE /* LeftMenuTableViewController.swift */; };
 		BFDEA5541EC778AC00E1E1C6 /* MyPinAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFDEA5531EC778AC00E1E1C6 /* MyPinAnnotation.swift */; };
 		BFE63CF41EC42F570060E725 /* 中国广东省深圳市南山区北环大道8188号 邮政编码_ 518055.gpx in Resources */ = {isa = PBXBuildFile; fileRef = BFE63CF31EC42F570060E725 /* 中国广东省深圳市南山区北环大道8188号 邮政编码_ 518055.gpx */; };
@@ -75,6 +76,7 @@
 		BFC108EA1ED13D0F00AA7B6C /* 上车前.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "上车前.m4a"; sourceTree = "<group>"; };
 		BFCFFCB91ECF4D9C00EDE20F /* GetPasswordViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetPasswordViewController.swift; sourceTree = "<group>"; };
 		BFCFFCBB1ECF548500EDE20F /* UIViewHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewHelper.swift; sourceTree = "<group>"; };
+		BFD842A21ED4995D00588991 /* NetworkHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkHelper.swift; sourceTree = "<group>"; };
 		BFDDACD71EBB517C00B8EABE /* LeftMenuTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeftMenuTableViewController.swift; sourceTree = "<group>"; };
 		BFDEA5531EC778AC00E1E1C6 /* MyPinAnnotation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyPinAnnotation.swift; sourceTree = "<group>"; };
 		BFE63CF31EC42F570060E725 /* 中国广东省深圳市南山区北环大道8188号 邮政编码_ 518055.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = "中国广东省深圳市南山区北环大道8188号 邮政编码_ 518055.gpx"; path = "../中国广东省深圳市南山区北环大道8188号 邮政编码_ 518055.gpx"; sourceTree = "<group>"; };
@@ -159,6 +161,7 @@
 				BFDEA5531EC778AC00E1E1C6 /* MyPinAnnotation.swift */,
 				BF0ADFBB1ECDD11000293BD2 /* ColorHelper.swift */,
 				BFCFFCBB1ECF548500EDE20F /* UIViewHelper.swift */,
+				BFD842A21ED4995D00588991 /* NetworkHelper.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -344,6 +347,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BFD842A31ED4995D00588991 /* NetworkHelper.swift in Sources */,
 				BFDEA5541EC778AC00E1E1C6 /* MyPinAnnotation.swift in Sources */,
 				BFCFFCBC1ECF548500EDE20F /* UIViewHelper.swift in Sources */,
 				BF0ADFBA1ECDCBA700293BD2 /* InputBikeNoViewController.swift in Sources */,

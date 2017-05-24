@@ -6,3 +6,4 @@
 #import <AMapSearchKit/AMapSearchKit.h>
 #import <MAMapKit/MAMapKit.h>
 #import <AMapNaviKit/AMapNaviKit.h>
+#import <AVOSCloud/AVOSCloud.h>
