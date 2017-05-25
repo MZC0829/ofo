@@ -17,19 +17,17 @@ class GetPasswordViewController: UIViewController {
     @IBOutlet weak var nameBikePassword3: myPreviewLabel!
     @IBOutlet weak var nameBikePassword4: myPreviewLabel!
     
+    
+    @IBAction func funcBarBtnBar(_ sender: UIBarButtonItem)
+    {
+        dismiss(animated: true, completion: nil)
+    }
+    
     var isTorchOn = false
     var isVoiceOn = true
     var CountdownSeconds = 121
     var bikeNo:String = ""
-    var bikePasswordArray : [String] = [] {
-            didSet{
-                self.nameBikePassword1.text = bikePasswordArray[0]
-                self.nameBikePassword2.text = bikePasswordArray[1]
-                self.nameBikePassword3.text = bikePasswordArray[2]
-                self.nameBikePassword4.text = bikePasswordArray[3]
-            }
-    }
-    
+    var bikePasswordArray : [String] = []
     @IBOutlet weak var nameLabelTimer: UILabel!
     @IBOutlet weak var nameTorchBtn: UIButton!
     @IBOutlet weak var nameVoiceBtn: UIButton!
@@ -38,7 +36,7 @@ class GetPasswordViewController: UIViewController {
     //立即报修事件
     @IBAction func funcBtnSendRepairs(_ sender: UIButton)
     {
-        dismiss(animated: true, completion: nil)
+        
     }
     
     //打开或者关闭手电筒
@@ -90,18 +88,15 @@ class GetPasswordViewController: UIViewController {
             }
             self.nameLabelTimer.text = self.CountdownSeconds.description
         }
-        //navigationController?.navigationBar.barStyle = .blackOpaque
-        //navigationController?.navigationBar.backgroundColor
-//        navigationItem.leftBarButtonItem = UIBarButtonItem(title: "", style: UIBarButtonItemStyle.plain, target: self, action: #selector(GetPasswordViewController.funcBack))
+        
+        self.nameBikePassword1.text = bikePasswordArray[0]
+        self.nameBikePassword2.text = bikePasswordArray[1]
+        self.nameBikePassword3.text = bikePasswordArray[2]
+        self.nameBikePassword4.text = bikePasswordArray[3]
         
         
     }
     
-//    func funcBack()
-//    {
-//        dismiss(animated: true, completion: nil)
-//    }
-
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

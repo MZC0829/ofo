@@ -34,6 +34,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>MIBlurPopup.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-ofo.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -67,16 +72,6 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>131C9F74F631E8BAD4BA7A18C8B0DEC9</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>2D47373207A5FDDBABFDB32951CD5C0E</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
 		<key>3E01143F3C6C5F4C651109AE4A7F4DAA</key>
 		<dict>
 			<key>primary</key>
@@ -87,12 +82,22 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>82117D57807A8B618E4B313A02FD7592</key>
+		<key>66B8E1813E49F09F5442C2D8D3A11871</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>853499F7ED64E82906DD78760D5D0F17</key>
+		<key>69F59636E016BD704D9FAFDDACAFE4EA</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>7F8532FB97CE10CE4219813B301E9144</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>82117D57807A8B618E4B313A02FD7592</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -102,17 +107,22 @@
 			<key>primary</key>
 			<true/>
 		</dict>
+		<key>9436038F82B7775D5C9A1ADB17F3A366</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>A84DA1D502917E8956383E16DCBDC7CD</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>ACFD5B30B5F27985613585B4104DB8A1</key>
+		<key>EC80E0EB62276FF7D34025443AF6382B</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>E37E4FCBFAA7AF6064C2F653DD9AA45E</key>
+		<key>FAFCFAD325781584A527552DE16493C1</key>
 		<dict>
 			<key>primary</key>
 			<true/>

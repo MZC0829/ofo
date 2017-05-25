@@ -11,5 +11,6 @@ target 'ofo' do
     pod 'SwiftyTimer'
     pod 'SwiftySound'
     pod 'AVOSCloud'  # 数据存储、短信、云引擎调用等基础服务模块(LeanCloud oc版本)
-    pod 'LeanCloud'  #LeanCloud swift版本    
+    pod 'LeanCloud'  #LeanCloud swift版本
+    pod 'MIBlurPopup' #弹出框
 end

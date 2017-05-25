@@ -25,6 +25,7 @@ extension NetworkHelper
             
             if let e = e {
                 print("出错了",e.localizedDescription)
+                completion(nil)
             }
             
             if let result = result, let password = result["Password"] as? String {

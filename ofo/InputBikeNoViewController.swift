@@ -13,6 +13,9 @@ class InputBikeNoViewController: UIViewController,APNumberPadDelegate,UITextFiel
 {
     var isFlashOn = false
     var isVoiceOn = true
+    var bikeNo:String!   //输入的车牌号码
+    var bikePassword:[String] = []   //获取到的密码
+
     
 
     @IBOutlet weak var nameInputBikeNoTopView: UIView!
@@ -25,8 +28,7 @@ class InputBikeNoViewController: UIViewController,APNumberPadDelegate,UITextFiel
     
     @IBAction func funcGetPasswordButton(_ sender: UIButton)
     {
-        let vc = GetPasswordViewController()
-        vc.bikeNo = nameInputBikeNoText.text!
+        requestPassword()
         
     }
     
@@ -66,7 +68,6 @@ class InputBikeNoViewController: UIViewController,APNumberPadDelegate,UITextFiel
     override func viewDidLoad()
     {
         super.viewDidLoad()
-        
         nameGetPasswordButton.isEnabled = false
         self.title = "车辆解锁"
         
@@ -77,19 +78,19 @@ class InputBikeNoViewController: UIViewController,APNumberPadDelegate,UITextFiel
         nameInputBikeNoText.delegate = self
         
         
+        
+        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "扫码用车", style: .plain, target: self, action: #selector(funcBackToScan))
+
         nameInputBikeNoText.layer.borderWidth = 2
         nameInputBikeNoText.layer.borderColor = UIColor.ofo.cgColor
-
+        
         nameShowCostLabel.layer.cornerRadius = 5
         nameShowCostLabel.layer.masksToBounds = true
         
         nameInputBikeNoTopView.layer.shadowOffset = CGSize(width: 0, height: 0)
         nameInputBikeNoTopView.layer.shadowRadius = 3
         nameInputBikeNoTopView.layer.shadowOpacity = 0.5
-        
-        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "扫码用车", style: .plain, target: self, action: #selector(funcBackToScan))
-        
-        
+
     }
     
     func funcBackToScan()
@@ -99,13 +100,10 @@ class InputBikeNoViewController: UIViewController,APNumberPadDelegate,UITextFiel
     
     func numberPad(_ numberPad: APNumberPad, functionButtonAction functionButton: UIButton, textInput: UIResponder)
     {
-        print("你点击了键盘")
-        if !nameInputBikeNoText.text!.isEmpty
-        {
-            performSegue(withIdentifier: "showPassword", sender: self)
-        }
-        
+        requestPassword()
     }
+    
+    
     
     // 输入车牌号码
     func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool
@@ -137,10 +135,34 @@ class InputBikeNoViewController: UIViewController,APNumberPadDelegate,UITextFiel
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+      
     }
     
+    
+    
+    func requestPassword()
+    {
+        if !nameInputBikeNoText.text!.isEmpty
+        {
+            bikeNo = nameInputBikeNoText.text!
+            NetworkHelper.getPassword(bikeNo: bikeNo, completion: { (pass) in
+                
+                if let pass = pass {
+                    self.bikePassword = pass.characters.map{
+                        
+                        return $0.description
+                    }
+                    self.performSegue(withIdentifier: "showPassword", sender: self)
 
+                }
+                else {
+                    self.performSegue(withIdentifier: "toShowErronBikeNoSegue", sender: self)
+                }
+            })
+
+        }
+
+    }
     
     // MARK: - Navigation
 
@@ -150,21 +172,8 @@ class InputBikeNoViewController: UIViewController,APNumberPadDelegate,UITextFiel
         if segue.identifier == "showPassword"
         {
             let toVC = segue.destination as! GetPasswordViewController
-            let bikeNo = nameInputBikeNoText.text!
+            toVC.bikePasswordArray = self.bikePassword
             toVC.bikeNo = bikeNo
-            
-            NetworkHelper.getPassword(bikeNo: bikeNo, completion: { (pass) in
-                
-                if let pass = pass {
-                    toVC.bikePasswordArray = pass.characters.map{
-                        
-                        return $0.description
-                    }
-                }
-                else {
-                    print("车牌有误")
-                }
-            })
-       }
+        }
    }
 }
