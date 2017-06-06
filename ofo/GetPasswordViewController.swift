@@ -12,6 +12,7 @@ import SwiftySound
 
 class GetPasswordViewController: UIViewController {
     
+    @IBOutlet weak var nameContainerView: UIView!
     @IBOutlet weak var nameBikePassword1: myPreviewLabel!
     @IBOutlet weak var nameBikePassword2: myPreviewLabel!
     @IBOutlet weak var nameBikePassword3: myPreviewLabel!
@@ -94,6 +95,9 @@ class GetPasswordViewController: UIViewController {
         self.nameBikePassword3.text = bikePasswordArray[2]
         self.nameBikePassword4.text = bikePasswordArray[3]
         
+        nameContainerView.layer.shadowOffset = CGSize(width: 0, height: 0)
+        nameContainerView.layer.shadowRadius = 3
+        nameContainerView.layer.shadowOpacity = 0.5
         
     }
     

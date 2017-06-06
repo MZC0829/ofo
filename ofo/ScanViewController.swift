@@ -48,7 +48,8 @@ class ScanViewController: LBXScanViewController {
         //style.anmiationStyle = .LineMove
         //style.animationImage = #imageLiteral(resourceName: "qrcode_Scan_weixin_Line")
         style.anmiationStyle = .NetGrid
-        style.animationImage = #imageLiteral(resourceName: "qrcode_scan_part_net")
+        //style.animationImage = #imageLiteral(resourceName: "qrcode_scan_part_net")
+        style.animationImage = #imageLiteral(resourceName: "bg_QRCodeLine")
         scanStyle = style
     }
 

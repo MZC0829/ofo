@@ -1,34 +1,38 @@
 //
-//  InputDiscountCodeViewController.swift
+//  ThanksSendSuggestionViewController.swift
 //  ofo
 //
-//  Created by 麦志超 on 2017/5/20.
+//  Created by 麦志超 on 2017/5/26.
 //  Copyright © 2017年 mzc. All rights reserved.
 //
 
 import UIKit
-import SWRevealViewController
 
-class InputDiscountCodeViewController: UIViewController
-{
+class ThanksSendSuggestionViewController: UIViewController {
 
+    @IBAction func funcBarBtnBack(_ sender: UIBarButtonItem) {
+        funcBack()
+    }
+    
+    @IBAction func funcBackBtn(_ sender: UIButton)
+    {
+        funcBack()
+    }
+    
     override func viewDidLoad()
     {
         super.viewDidLoad()
-
-        self.title = "输入优惠码"
-        
-        if revealViewController() != nil
-        {
-            navigationItem.leftBarButtonItem?.target = revealViewController()
-            navigationItem.leftBarButtonItem?.action = #selector(SWRevealViewController.revealToggle(_:))
-            self.view.addGestureRecognizer(revealViewController().panGestureRecognizer())
-        }
     }
+    
+    func funcBack()
+    {
+        dismiss(animated: true, completion: nil)
+    }
+    
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-       
+        // Dispose of any resources that can be recreated.
     }
     
 

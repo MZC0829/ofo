@@ -173,7 +173,7 @@ class InputBikeNoViewController: UIViewController,APNumberPadDelegate,UITextFiel
         {
             let toVC = segue.destination as! GetPasswordViewController
             toVC.bikePasswordArray = self.bikePassword
-            toVC.bikeNo = bikeNo
+            toVC.bikeNo = bikeNo!
         }
    }
 }

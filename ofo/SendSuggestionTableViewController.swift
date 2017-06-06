@@ -7,31 +7,113 @@
 //
 
 import UIKit
+import APNumberPad
 
-class SendSuggestionTableViewController: UITableViewController {
+class SendSuggestionTableViewController: UITableViewController,APNumberPadDelegate,UITextFieldDelegate
+{
+    var SelectdState = false
+    
+    @IBAction func funcBtnLockSelf(_ sender: myPreviewButton)
+    {
+        sender.isSelected = !sender.isSelected
+        funcSelectdState(selectBtn: sender)
+    }
+    
+    @IBAction func funcBtnBiekNoDismiss(_ sender: myPreviewButton)
+    {
+        sender.isSelected = !sender.isSelected
+        funcSelectdState(selectBtn: sender)
+    }
+    
+    @IBAction func funcBtnTyreBreak(_ sender: myPreviewButton)
+    {
+        sender.isSelected = !sender.isSelected
+        funcSelectdState(selectBtn: sender)
+    }
+    
+    @IBAction func funcBtnBikeLockBreak(_ sender: myPreviewButton)
+    {
+        sender.isSelected = !sender.isSelected
+        funcSelectdState(selectBtn: sender)
+    }
+    
+    @IBAction func funcBtnDisOrderParking(_ sender: myPreviewButton)
+    {
+        sender.isSelected = !sender.isSelected
+        funcSelectdState(selectBtn: sender)
+    }
+    
+    @IBAction func funcBtnPasswordWrong(_ sender: myPreviewButton)
+    {
+        sender.isSelected = !sender.isSelected
+        funcSelectdState(selectBtn: sender)
+    }
+    
+    @IBAction func funcBtnBrakeBreak(_ sender: myPreviewButton)
+    {
+        sender.isSelected = !sender.isSelected
+        funcSelectdState(selectBtn: sender)
+    }
+    
+    @IBAction func funcBtnOtherQuestion(_ sender: myPreviewButton)
+    {
+        sender.isSelected = !sender.isSelected
+        funcSelectdState(selectBtn: sender)
+    }
 
+    // 提交按钮
+    @IBAction func funcBtnSendSuggestion(_ sender: myPreviewButton)
+    {
+        funcBtnSend()
+    }
+    // 提交按钮事件
+    func funcBtnSend()
+    {
+        // 待完善，往数据库添加一条保修信息（包含车牌号 故障问题 照片）
+    }
+    
+    @IBOutlet weak var nameInputBikeNo: myPreviewTextField!
+    
+    @IBOutlet weak var nameInputComment: myPreviewTextField!
+    
     override func viewDidLoad()
     {
         super.viewDidLoad()
         
         title = "吐槽"
-        
-        
-
+    
         navigationItem.leftBarButtonItem = UIBarButtonItem(image: #imageLiteral(resourceName: "popBack"), style: UIBarButtonItemStyle.plain, target: self, action: #selector(SendSuggestionTableViewController.funcBack))
        
+        //使用第三方键盘
+        let numberPad = APNumberPad(delegate: self)
+        numberPad.leftFunctionButton.setTitle("确定", for: UIControlState.normal)
+        nameInputBikeNo.inputView = numberPad
+        nameInputBikeNo.delegate = self
 
     
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem()
+    }
+    
+    func numberPad(_ numberPad: APNumberPad, functionButtonAction functionButton: UIButton, textInput: UIResponder)
+    {
+        nameInputBikeNo.resignFirstResponder()
     }
     
     func funcBack()
     {
         dismiss(animated: true, completion: nil)
+    }
+    
+    func funcSelectdState(selectBtn:myPreviewButton)
+    {
+        if selectBtn.isSelected
+        {
+            selectBtn.backgroundColor = UIColor.ofo
+        }
+        else
+        {
+            selectBtn.backgroundColor = UIColor.white
+        }
+        
     }
 
     override func didReceiveMemoryWarning() {

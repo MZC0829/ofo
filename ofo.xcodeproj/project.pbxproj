@@ -21,6 +21,7 @@
 		BF3622DA1EC60CF200A2EF87 /* AboutUsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF3622D91EC60CF200A2EF87 /* AboutUsTableViewController.swift */; };
 		BF5E38281ED00073005D0B4F /* InputDiscountCodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF5E38271ED00073005D0B4F /* InputDiscountCodeViewController.swift */; };
 		BF79ACCD1ED32FBC00D38AFA /* SendSuggestionTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF79ACCC1ED32FBC00D38AFA /* SendSuggestionTableViewController.swift */; };
+		BF819A7C1ED87BEE00AA39DA /* ThanksSendSuggestionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF819A7B1ED87BEE00AA39DA /* ThanksSendSuggestionViewController.swift */; };
 		BFC108EB1ED13D0F00AA7B6C /* 0.m4a in Resources */ = {isa = PBXBuildFile; fileRef = BFC108DE1ED13D0F00AA7B6C /* 0.m4a */; };
 		BFC108EC1ED13D0F00AA7B6C /* 1.m4a in Resources */ = {isa = PBXBuildFile; fileRef = BFC108DF1ED13D0F00AA7B6C /* 1.m4a */; };
 		BFC108ED1ED13D0F00AA7B6C /* 2.m4a in Resources */ = {isa = PBXBuildFile; fileRef = BFC108E01ED13D0F00AA7B6C /* 2.m4a */; };
@@ -63,6 +64,7 @@
 		BF3622D91EC60CF200A2EF87 /* AboutUsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutUsTableViewController.swift; sourceTree = "<group>"; };
 		BF5E38271ED00073005D0B4F /* InputDiscountCodeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InputDiscountCodeViewController.swift; sourceTree = "<group>"; };
 		BF79ACCC1ED32FBC00D38AFA /* SendSuggestionTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SendSuggestionTableViewController.swift; sourceTree = "<group>"; };
+		BF819A7B1ED87BEE00AA39DA /* ThanksSendSuggestionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThanksSendSuggestionViewController.swift; sourceTree = "<group>"; };
 		BFC108DE1ED13D0F00AA7B6C /* 0.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = 0.m4a; sourceTree = "<group>"; };
 		BFC108DF1ED13D0F00AA7B6C /* 1.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = 1.m4a; sourceTree = "<group>"; };
 		BFC108E01ED13D0F00AA7B6C /* 2.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = 2.m4a; sourceTree = "<group>"; };
@@ -135,6 +137,7 @@
 				BF1228D11EB6C2C00044970B /* ViewController.swift */,
 				BFDDACD71EBB517C00B8EABE /* LeftMenuTableViewController.swift */,
 				BF79ACCC1ED32FBC00D38AFA /* SendSuggestionTableViewController.swift */,
+				BF819A7B1ED87BEE00AA39DA /* ThanksSendSuggestionViewController.swift */,
 				BF1228E71EB6C6030044970B /* WebViewController.swift */,
 				BF13786B1ECABA7A00DF7C75 /* ScanViewController.swift */,
 				BF0ADFB91ECDCBA700293BD2 /* InputBikeNoViewController.swift */,
@@ -245,6 +248,7 @@
 				TargetAttributes = {
 					BF1228CB1EB6C2C00044970B = {
 						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = TZL5L66BAK;
 						LastSwiftMigration = 0820;
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
@@ -362,6 +366,7 @@
 				BF79ACCD1ED32FBC00D38AFA /* SendSuggestionTableViewController.swift in Sources */,
 				BF13786C1ECABA7A00DF7C75 /* ScanViewController.swift in Sources */,
 				BF1228D21EB6C2C00044970B /* ViewController.swift in Sources */,
+				BF819A7C1ED87BEE00AA39DA /* ThanksSendSuggestionViewController.swift in Sources */,
 				BFCFFCBA1ECF4D9C00EDE20F /* GetPasswordViewController.swift in Sources */,
 				BF0ADFBC1ECDD11000293BD2 /* ColorHelper.swift in Sources */,
 				BFDDACD81EBB517C00B8EABE /* LeftMenuTableViewController.swift in Sources */,
@@ -492,6 +497,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = TZL5L66BAK;
 				INFOPLIST_FILE = ofo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = snsd.com.ofo;
@@ -509,6 +515,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = TZL5L66BAK;
 				INFOPLIST_FILE = ofo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = snsd.com.ofo;
